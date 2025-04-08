@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/articleStyles.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Currency Converter</h1>
+        </div>
+        <div id="main-nav">
+            <nav>
+                
+            </nav>
+        </div>
+        <div id="logo">
+            <button onclick=gotoHome()>Home</button>
+            <button onclick=gotoArticles()>Articles</button>
+            <!-- <button id="toggle-mode">Advanced Mode</button> -->
+            <button  type="button" onclick=gotoTeam()>Code Vikings</button>
+        </div>
+        
+    </header>
+
+    <script>
+
+        function gotoHome(){
+            window.location.href = "/index.html";
+        }
+
+        function gotoArticles(){
+            window.location.href = "/articles.html";
+        }
+
+        function gotoTeam(){
+            window.location.href = "/team.html";
+        }
+        
+    </script>
+    <section class="article-container">
+        <div id="title-container">
+            <h1>Economic News</h1>
+        </div>
+        
+        <div class="newsClass" >
+            <div id="news">
+                
+            </div>
+        </div>
+    </section>
+    
+    <script src="articleScript.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #1f1f1f; /* Darker header background */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    color: #e0e0e0; /* Light text color */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to separate from newsClass */
+}
+
+.converter {
+    margin-top: 20px;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.newsClass {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as needed */
+}
+
+.article {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.article p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #333;
+    background-image: url("/Moneeeyyyy/christine-roy-ir5MHI6rPg0-unsplash.jpg");
+    width: 100%;
+    min-height: 100vh;
+}
+
+.article-element {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#title-container h1{
+    color: #ccc;
+}
+
+/* #title-container {
+    background-color: #ccc;
+    color: #333;
+} */

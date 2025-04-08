@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Broo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@everapi/currencyapi-js"></script>
+    <script src="/index.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div id="title">
+            <h1>Currency Converter</h1>
+        </div>
+        <div id="main-nav">
+            <nav>
+                
+            </nav>
+        </div>
+        <div id="logo">
+            <button onclick=gotoArticles()>Articles</button>
+            <button id="toggle-mode">Advanced Mode</button>
+            <button onclick=gotoTeam()>Code Vikings</button>
+
+        </div>
+        
+    </header>
+
+    <script>
+
+        function gotoTeam(){
+            window.location.href = "/team.html";
+        }
+
+        function gotoArticles(){
+            window.location.href = "/articles.html";
+        }
+
+    </script>
+ 
+    <section id="basic">
+        <form method="post" id="basic-form">
+            <h3>Basic Converter</h3>
+            <div class="mini-container">
+                <div id="amount-container">
+                    <label>Amount</label>
+                    <input name="basic-amount" id="basic-amount" type="number" min="0">
+                </div>
+ 
+                <div class="input-container">
+                    <label>From</label>
+                    <select name="basic-from" id="basic-fromCurrency">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
+ 
+                <div class="input-container">
+                    <label>To</label>
+                    <select name="basic-to" id="basic-toCurrency">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
+            </div>
+ 
+            <div id="btn-con">
+                <button type="button" id="convert-btn">Convert</button>
+            </div>
+ 
+            <div class="output-container">
+                <p><input type="text" id="basic-result" name="basic-result" readonly></p>
+                <p id="wealthStatus"></p>
+            </div>
+        </form>
+    </section>
+    
+    <section id="advanced" class="hidden">
+        <div class="adv-outer-container">
+            <h2>Advanced Converter</h2>
+            
+            <div class="adv-input-container">
+                <div class="adv-amount-container">
+                    <label>Amount</label>
+                    <input type="number" id="advanced-amount" name="advanced-amount" min="0">
+                </div>
+                
+                <div class="adv-from-input-container">
+                    <label>From:</label> 
+                    <br/>               
+                        <select id="adv-fromCurrency">
+                            <option value="">-Select--</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="JPY">JPY</option>
+                            <option value="INR">INR</option>
+                        </select>
+                </div>
+                <div class="adv-from-input-container">
+                    <label>To:</label>
+                    <br/>
+                    <select id="adv-toCurrency">
+                        <option value="">-Select--</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="INR">INR</option>
+                    </select>
+                    </div>
+                <div class="exchange-button">
+                    <button id="fetch-adv-data">Get Exchange Rates</button>
+                </div>
+            </div>
+
+            <!-- <div class="adv-table-container">
+                <table id="adv-exchange-table">
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Exchange Rate (Base: USD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div> -->
+           
+    
+            <!-- <div id="adv-best-conversion-path">
+                <input id="advance-result" type="text" readonly>
+            </div> -->
+        
+            <!-- <input value="This is before" id="ouput-adv-text"> -->
+            <!-- <div class="graph">
+                <div class="node" id="USD">USD</div>
+                <div class="node" id="EUR">EUR</div>
+                <div class="node" id="GBP">GBP</div>
+                <div class="node" id="JPY">JPY</div>
+                <div class="node" id="INR">INR</div>
+            </div> -->
+
+            <div id="allPathContainer">
+                <h3>All possible paths</h3>
+                <ul id="allPaths"></ul>
+            </div>
+            
+            <div id="bestPathContainer">
+                <h3>Best Path</h3>
+                <p id="bestPath"></p>
+                <p id="bestPath-text"></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" color="black">
+      </footer>
+</body>
+</html>
+ 
