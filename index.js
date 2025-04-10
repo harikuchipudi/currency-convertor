@@ -111,6 +111,8 @@ async function convertCurrency() {
         const response = await fetch(url);
         const data = await response.json();
 
+        console.log(data);
+
         if (data.data && data.data[toCurrency]) {
             let rate = data.data[toCurrency].value;
             let convertedAmount = (amount * rate).toFixed(2);
@@ -297,6 +299,11 @@ const exchangeGraph = {
     "JPY": { "USD": 0.0067, "EUR": 0.0060, "GBP": 0.0052 }
 };
 
+const currencyExchangeGraph = {
+
+}
+
+
 // // Attach the proper event listener to the button
 // const btn = document.getElementById("fetch-adv-data");
 // btn.addEventListener("click", findPaths);
@@ -321,6 +328,13 @@ function findAllPaths(graph, from, to, visited = {}, path = [], cost = 0, allPat
     return allPaths;
 }
 
+const keyToName = {
+    "INR": "Rupees",
+    "USD": "Dollars",
+    "EUR": "European Pound",
+    "JPY": "Japaneese Yen",
+    "GBP": "British Pound Stirling"
+}
 
 
 // Main function to find paths and display results
@@ -330,7 +344,6 @@ function findPaths() {
 
     console.log(from);
     console.log(to);
-
     // let from = "USD";
     // let to = "INR";
 
@@ -375,7 +388,7 @@ function findPaths() {
 
     let final_amount = amount * bestPath.cost.toFixed(2);
 
-    document.getElementById("bestPath-text").innerText = `The maximum amount : ${final_amount} Rupees`;
+    document.getElementById("bestPath-text").innerText = `The maximum amount : ${final_amount} ${keyToName[to]}`;
 
 
     document.getElementById("bestPath").innerText = `Best Path: ${bestPath.path.join(" -> ")} | Cost : ${bestPath.cost.toFixed(2)}`;
