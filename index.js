@@ -321,13 +321,18 @@ function findAllPaths(graph, from, to, visited = {}, path = [], cost = 0, allPat
     return allPaths;
 }
 
+
+
 // Main function to find paths and display results
 function findPaths() {
-    // let fromt = document.getElementById("adv-fromCurrency").value;
-    // let tot = document.getElementById("adv-toCurrency").value;
+    let from = document.getElementById("adv-fromCurrency").value.toUpperCase();
+    let to = document.getElementById("adv-toCurrency").value.toUpperCase();
 
-    let from = "USD";
-    let to = "INR";
+    console.log(from);
+    console.log(to);
+
+    // let from = "USD";
+    // let to = "INR";
 
     let amount = parseInt(document.getElementById("advanced-amount").value);
     console.log(typeof(amount));

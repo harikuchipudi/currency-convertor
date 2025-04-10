@@ -3,7 +3,7 @@ const newsUrl = 'https://reuters-business-and-financial-news.p.rapidapi.com/arti
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': 'd8e48ffc08mshc18787370f8c2f3p1470b8jsn23b4e5cae6e7',
+		'x-rapidapi-key': '477aee7bf1mshb4c71c17722a81ep153466jsn8079a583279e',
 		'x-rapidapi-host': 'currency-conversion-and-exchange-rates.p.rapidapi.com'
 	}
 };
