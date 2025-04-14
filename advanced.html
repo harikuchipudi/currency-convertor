@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Arbitrage DFS</title>
+  <link rel="stylesheet" href="/advanced.css" />
+</head>
+<body>
+  <header>
+      <div id="title">
+        <h1>Currency Converter</h1>
+      </div>
+    <div id="main-nav">
+        <nav>  
+        </nav>
+    </div>
+    <div id="logo">
+        
+        <button id="toggle-mode" onclick=gotoHome()>Home Page</button>
+        <button onclick=gotoArticles()>Articles</button>
+        <!-- <button onclick=gotoTeam()>Code Vikings</button> -->
+        <button id="special-button" onclick=gotoSpecialPage()>Arbitrage</button>
+
+  </header>
+
+  <script>
+
+    function gotoSpecialPage(){
+        window.location.href = "/advanced.html";
+    }
+
+    function gotoTeam(){
+        window.location.href = "/Team.html";
+    }
+
+    function gotoArticles(){
+        window.location.href = "/articles.html";
+    }
+
+    function gotoHome(){
+      window.location.href = "/index.html";
+    }
+
+</script>
+  <h1>Currency Arbitrage Finder</h1>
+
+  <div class="currency-container" id="nodesContainer"></div>
+
+  <div class="input-area">
+    <label>From:
+      <select id="fromCurrency"></select>
+    </label>
+    <label>To:
+      <select id="toCurrency"></select>
+    </label>
+    <label>Amount:
+      <input type="number" id="amount" value="100" min="1" />
+    </label>
+    <button onclick="findBestArbitrage()">Find Conversion Paths</button>
+  </div>
+
+  <div id="result" class="result-box"></div>
+  <div id="allPaths" class="path-box"></div>
+
+  <script src="/adancedScript.js"></script>
+</body>
+</html>

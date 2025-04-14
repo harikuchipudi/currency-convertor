@@ -20,15 +20,21 @@
             </nav>
         </div>
         <div id="logo">
-            <button onclick=gotoArticles()>Articles</button>
+           
             <button id="toggle-mode">Advanced Mode</button>
-            <button onclick=gotoTeam()>Code Vikings</button>
+            <button onclick=gotoArticles()>Articles</button>
+            <!-- <button onclick=gotoTeam()>Code Vikings</button> -->
+            <button id="special-button" onclick=gotoSpecialPage()>Arbitrage</button>
 
         </div>
         
     </header>
 
     <script>
+
+        function gotoSpecialPage(){
+            window.location.href = "/advanced.html";
+        }
 
         function gotoTeam(){
             window.location.href = "/Team.html";

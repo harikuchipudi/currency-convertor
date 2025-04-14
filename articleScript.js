@@ -28,7 +28,7 @@ async function fetchNews() {
 	const newsOptions = {
 		method: 'GET',
 		headers: {
-			'x-rapidapi-key': 'c16aa61ca3msh2021cca5becb6b3p11825ajsnb2396dc4b40f',
+			'x-rapidapi-key': '477aee7bf1mshb4c71c17722a81ep153466jsn8079a583279e',
 			'x-rapidapi-host': 'reuters-business-and-financial-news.p.rapidapi.com'
 		}
 	};

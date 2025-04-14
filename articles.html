@@ -19,13 +19,16 @@
         <div id="logo">
             <button onclick=gotoHome()>Home</button>
             <button onclick=gotoArticles()>Articles</button>
-            <!-- <button id="toggle-mode">Advanced Mode</button> -->
-            <button  type="button" onclick=gotoTeam()>Code Vikings</button>
+            <button id="toggle-mode" onclick=gotoSpecialPage()>Arbitrage</button>
         </div>
         
     </header>
 
     <script>
+
+        function gotoSpecialPage(){
+            window.location.href = "/advanced.html";
+        }
 
         function gotoHome(){
             window.location.href = "/index.html";

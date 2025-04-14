@@ -299,15 +299,6 @@ const exchangeGraph = {
     "JPY": { "USD": 0.0067, "EUR": 0.0060, "GBP": 0.0052 }
 };
 
-const currencyExchangeGraph = {
-
-}
-
-
-// // Attach the proper event listener to the button
-// const btn = document.getElementById("fetch-adv-data");
-// btn.addEventListener("click", findPaths);
-
 // Function to find all possible paths
 function findAllPaths(graph, from, to, visited = {}, path = [], cost = 0, allPaths = []) {
     path.push(from);
