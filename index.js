@@ -341,6 +341,10 @@ function findPaths() {
     let amount = parseInt(document.getElementById("advanced-amount").value);
     console.log(typeof(amount));
 
+    if(amount <=0 ){
+        alert("entre vaid amount");
+    }
+
 
 
     // Validate inputs
