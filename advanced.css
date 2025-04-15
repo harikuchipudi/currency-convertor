@@ -3,12 +3,20 @@ body {
   background-color: #f4f7fa;
   margin: 0;
   color: #333;
-  /* background-image: url("/images/istockphoto-1306103779-612x612.jpg"); */
+  background-image: url("/images/istockphoto-1306103779-612x612.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   border: 0;
+}
+
+#title h1{
+  color: #bdc3c7;
+}
+
+#heading {
+  background-color: #bdc3c7;
 }
 
 header {
@@ -46,6 +54,7 @@ h1 {
 }
 
 .currency-container {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -95,6 +104,7 @@ h1 {
   color: white;
   font-size: 1.1rem;
   font-weight: 500;
+  background-color: #1f1f1f;
 }
 
 .input-area select,
