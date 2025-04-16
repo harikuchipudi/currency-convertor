@@ -3,7 +3,7 @@ const newsUrl = 'https://reuters-business-and-financial-news.p.rapidapi.com/arti
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '477aee7bf1mshb4c71c17722a81ep153466jsn8079a583279e',
+		'x-rapidapi-key': 'cf869b96ccmsh4649f482b7e8d53p1c262djsn410e87dafe40',
 		'x-rapidapi-host': 'currency-conversion-and-exchange-rates.p.rapidapi.com'
 	}
 };
@@ -28,7 +28,7 @@ async function fetchNews() {
 	const newsOptions = {
 		method: 'GET',
 		headers: {
-			'x-rapidapi-key': '477aee7bf1mshb4c71c17722a81ep153466jsn8079a583279e',
+			'x-rapidapi-key': 'cf869b96ccmsh4649f482b7e8d53p1c262djsn410e87dafe40',
 			'x-rapidapi-host': 'reuters-business-and-financial-news.p.rapidapi.com'
 		}
 	};
