@@ -1,4 +1,4 @@
-const apiKey = "cur_live_XrPbVsEUCCR0UFWBT8CBgZRdmdbCcarycmEkPw7I"; // Replace with your actual API key
+const apiKey = "cur_live_lqzJEslZTehdnIpXIfCRghlqHTvP0APhBrvOjKlY"; // Replace with your actual API key
 const btn = document.getElementById("test");
 const outputDiv = document.getElementById("output");
 

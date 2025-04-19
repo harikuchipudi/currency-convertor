@@ -6,7 +6,7 @@ const countries = [
     { id: "JPY", name: "Japan", tax: 1.0 }
   ];
   
-  const apikey = "cur_live_klfgeBuHDYuAkWqGzajcEhbjXvPOFU16W9Zxny2w";
+  const apikey = "cur_live_lqzJEslZTehdnIpXIfCRghlqHTvP0APhBrvOjKlY";
   let exchangeGraph = {}; 
   const taxState = {};
   const nodesContainer = document.getElementById("nodesContainer");
