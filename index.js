@@ -104,7 +104,7 @@ async function convertCurrency() {
         return;
     }
 
-    const apiKey = "cur_live_lqzJEslZTehdnIpXIfCRghlqHTvP0APhBrvOjKlY";
+    const apiKey = "cur_live_yOfZ37RlTw06q3DJhd1zxzj2LMOR4t10edRugBaq";
     const url = `https://api.currencyapi.com/v3/latest?apikey=${apiKey}&base_currency=${fromCurrency}&currencies=${toCurrency}`;
 
     try {
@@ -175,7 +175,7 @@ let currencyGraph = {};
 async function fetchExchangeRates() {
     try{
         // let baseCurrency = 'USD';
-        const apiKey = "cur_live_lqzJEslZTehdnIpXIfCRghlqHTvP0APhBrvOjKlY";
+        const apiKey = "cur_live_yOfZ37RlTw06q3DJhd1zxzj2LMOR4t10edRugBaq";
         const url = `https://api.currencyapi.com/v3/latest?apikey=${apiKey}&base_currency=USD`;
         const response = await fetch(url);
         const data = await response.json();
